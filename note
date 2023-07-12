@@ -1,0 +1,7 @@
+Note: how to publish
+
+nrm use npm
+pnpm login
+pnpm run prepare
+pnpm run build
+pnpm run release
