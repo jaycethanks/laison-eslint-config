@@ -58,6 +58,15 @@ module.exports = {
     },
   },
   overrides: [
+    // @jayce
+    // {
+    //   files: ['*.html'],
+    //   parser: 'eslint-html-parser',
+    //   rules: {
+    //     'html/html-lang': 'error',
+    //     'html/indent': ['error', 2],
+    //   },
+    // },
     {
       files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser',

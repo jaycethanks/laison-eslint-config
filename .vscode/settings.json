@@ -1,0 +1,36 @@
+{
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#4b2a31",
+    "titleBar.activeBackground": "#2d0c13",
+    "titleBar.activeForeground": "#fff",
+    "titleBar.inactiveBackground": "#2d0c13",
+    "titleBar.inactiveForeground": "#fff",
+    "activityBar.background": "#2d0c13",
+    "activityBar.foreground": "#fff",
+    "activityBar.inactiveForeground": "#ffffff4D",
+    "activityBar.activeBorder": "#ffffffCC",
+    "statusBar.background": "#2d0c13",
+    "statusBar.foreground": "#fff",
+    "statusBarItem.hoverBackground": "#ffffff4D",
+    "statusBarItem.remoteBackground": "#4b2a31",
+    "statusBarItem.remoteForeground": "#fff"
+  },
+  "coralize.color": "#2d0c13",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "javascript.format.enable": false
+}
