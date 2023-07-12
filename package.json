@@ -1,7 +1,7 @@
 {
   "name": "@laison/eslint-config-monorepo",
-  "version": "0.0.3",
-  "private": true,
+  "version": "0.0.4",
+  "private": false,
   "packageManager": "pnpm@8.6.7",
   "author": "SunZhongYi",
   "license": "MIT",
