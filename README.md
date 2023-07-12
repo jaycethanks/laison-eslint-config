@@ -53,9 +53,9 @@ Add the following settings to your `settings.json`:
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.organizeImports": false,
+    "source.organizeImports": false
   },
-  
+
   // The following is optional.
   // It's better to put under project setting `.vscode/settings.json`
   // to avoid conflicts with working with different eslint configs
@@ -143,6 +143,4 @@ Or you can always fork this repo and make your own.
 - [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
 - [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
 
-## License
 
-[MIT](./LICENSE) License &copy; 2019-PRESENT [Anthony Fu](https://github.com/antfu)
