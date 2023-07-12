@@ -5,6 +5,9 @@
   "packageManager": "pnpm@8.6.7",
   "author": "SunZhongYi",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "pnpm -r run stub && eslint .",
     "test": "pnpm -r run test",

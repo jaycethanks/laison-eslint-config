@@ -8,6 +8,9 @@
   "keywords": [
     "eslint-config"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "files": [
     "*.js"
