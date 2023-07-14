@@ -1,12 +1,12 @@
-const fs = require('node:fs')
-const { join } = require('node:path')
-const basic = require('@antfu/eslint-config-basic')
+const fs = require('node:fs');
+const { join } = require('node:path');
+const basic = require('@laison/eslint-config-basic');
 
-const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json';
 
 module.exports = {
   extends: [
-    '@antfu/eslint-config-basic',
+    '@laison/eslint-config-basic',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -125,8 +125,10 @@ module.exports = {
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     'object-curly-spacing': 'off',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
+    // 'semi': 'on',
+    '@typescript-eslint/semi': ['error', 'always'],
     'semi': 'off',
-    '@typescript-eslint/semi': ['error', 'never'],
+    // '@typescript-eslint/semi': ['error', 'never'],
     'quotes': 'off',
     '@typescript-eslint/quotes': ['error', 'single'],
     'space-before-blocks': 'off',
@@ -177,4 +179,4 @@ module.exports = {
     // handled by unused-imports/no-unused-imports
     '@typescript-eslint/no-unused-vars': 'off',
   },
-}
+};

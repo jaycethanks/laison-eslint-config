@@ -9,12 +9,10 @@ module.exports = {
     },
     sourceType: 'module',
   },
-
   env: {
     es2021: true,
     node: true,
   },
-
   plugins: [
     'import',
     'n',
@@ -203,7 +201,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
     'rest-spread-spacing': ['error', 'never'],
-    'semi': ['error', 'never'],
+    'semi': ['error', 'always'],
     'semi-spacing': ['error', { before: false, after: true }],
     'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': ['error', 'always'],

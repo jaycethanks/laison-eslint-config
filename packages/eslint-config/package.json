@@ -19,7 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@antfu/eslint-config-vue": "workspace:*",
+    "@laison/eslint-config-vue": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "eslint-plugin-eslint-comments": "^3.2.0",

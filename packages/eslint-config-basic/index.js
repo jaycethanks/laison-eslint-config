@@ -51,6 +51,7 @@ module.exports = {
     'antfu',
     'no-only-tests',
     'unused-imports',
+    '@html-eslint', // @jayce
   ],
   settings: {
     'import/resolver': {
@@ -58,15 +59,6 @@ module.exports = {
     },
   },
   overrides: [
-    // @jayce
-    // {
-    //   files: ['*.html'],
-    //   parser: 'eslint-html-parser',
-    //   rules: {
-    //     'html/html-lang': 'error',
-    //     'html/indent': ['error', 2],
-    //   },
-    // },
     {
       files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser',
@@ -227,7 +219,8 @@ module.exports = {
     'import/no-self-import': 'error',
 
     // Common
-    'semi': ['error', 'never'],
+    // 'semi': ['error', 'never'], // 禁用 semi
+    'semi': ['error', 'always'], // 有semi
     'curly': ['error', 'multi-or-nest', 'consistent'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
@@ -248,7 +241,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'no-constant-condition': 'warn',
     'no-debugger': 'error',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    // 'no-console': ['error', { allow: ['warn', 'error'] }],//禁止console
     'no-cond-assign': ['error', 'always'],
     'func-call-spacing': 'off',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],

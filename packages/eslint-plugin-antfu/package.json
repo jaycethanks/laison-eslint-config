@@ -1,5 +1,5 @@
 {
-  "name": "@laison/eslint-plugin-antfu",
+  "name": "eslint-plugin-antfu",
   "version": "0.0.7",
   "license": "MIT",
   "homepage": "https://github.com/antfu/eslint-config",
