@@ -1,8 +1,10 @@
-# @antfu/eslint-config
+# @laison/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@antfu/eslint-config)
+> fork form @laison/eslint-config
 
-- Single quotes, no semi
+[![npm](https://img.shields.io/npm/v/@laison/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@laison/eslint-config)
+
+- Single quotes, with semi
 - Auto fix for formatting (aimed to be used standalone **without** Prettier)
 - Designed to work with TypeScript, Vue out-of-box
 - Lint also for json, yaml, markdown
@@ -15,14 +17,14 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @laison/eslint-config
 ```
 
 ### Config `.eslintrc`
 
 ```json
 {
-  "extends": "@antfu"
+  "extends": "@laison"
 }
 ```
 
@@ -81,11 +83,11 @@ Type aware rules are enabled when a `tsconfig.eslint.json` is found in the proje
 
 ```js
 // .eslintrc.js
-process.env.ESLINT_TSCONFIG = 'tsconfig.json'
+process.env.ESLINT_TSCONFIG = 'tsconfig.json';
 
 module.exports = {
-  extends: '@antfu'
-}
+  extends: '@laison'
+};
 ```
 
 ### Lint Staged
@@ -111,9 +113,7 @@ npm i -D lint-staged simple-git-hooks
 
 ## FAQ
 
-### Prettier?
 
-[Why I don't use Prettier](https://antfu.me/posts/why-not-prettier)
 
 ### How to lint CSS?
 
@@ -127,20 +127,12 @@ Sure, you can override the rules in your `.eslintrc` file.
 
 ```jsonc
 {
-  "extends": "@antfu",
+  "extends": "@laison",
   "rules": {
     // your rules...
   }
 }
 ```
 
-Or you can always fork this repo and make your own.
-
-## Check Also
-
-- [antfu/dotfiles](https://github.com/antfu/dotfiles) - My dotfiles
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings) - My VS Code settings
-- [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
-- [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
 
 
