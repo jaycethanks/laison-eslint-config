@@ -1,14 +1,14 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "description": "",
+  "description": "this configs preset based on @antfu/eslint-config",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/vue": "^2.0.0",
     "vue": "^3.3.4"
