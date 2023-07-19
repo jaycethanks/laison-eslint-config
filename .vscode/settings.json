@@ -16,6 +16,7 @@
     "statusBarItem.remoteForeground": "#fff"
   },
   "coralize.color": "#2d0c13",
+  "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true

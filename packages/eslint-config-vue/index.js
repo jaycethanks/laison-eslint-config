@@ -1,8 +1,8 @@
-const { isPackageExists } = require('local-pkg')
+const { isPackageExists } = require('local-pkg');
 
-const TS = isPackageExists('typescript')
+const TS = isPackageExists('typescript');
 if (!TS)
-  console.warn('[@laison/eslint-config] TypeScript is not installed, fallback to JS only.')
+  console.warn('[@laison/eslint-config] TypeScript is not installed, fallback to JS only.');
 
 module.exports = {
   overrides: [
@@ -28,9 +28,16 @@ module.exports = {
       : '@laison/eslint-config-basic',
   ],
   rules: {
-    'vue/max-attributes-per-line': 'off',
+    'vue/max-attributes-per-line': ['error', { // @jayce: 指定标签上有多个属性时,的换行要求规则
+      singleline: {
+        max: 3,
+      },
+      multiline: {
+        max: 1,
+      },
+    }],
     'vue/no-v-html': 'off',
-    'vue/require-prop-types': 'off',
+    // 'vue/require-prop-types': 'off', // @jayce: 默认是必须指定 props 类型的
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/prefer-import-from-vue': 'off',
@@ -41,7 +48,7 @@ module.exports = {
     'vue/no-setup-props-destructure': 'off',
 
     'vue/component-tags-order': ['error', {
-      order: ['script', 'template', 'style'],
+      order: ['template', 'script', 'style'],
     }],
     'vue/block-tag-newline': ['error', {
       singleline: 'always',
@@ -50,6 +57,7 @@ module.exports = {
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
+    'vue/v-on-event-hyphenation': ['error', 'never'], // @jayce: Bad: <Example @cusom-event> Good: <Example @customEvent>
     'vue/define-macros-order': ['error', {
       order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
     }],
@@ -60,7 +68,7 @@ module.exports = {
     'vue/no-useless-v-bind': 'error',
     'vue/no-unused-refs': 'error',
     'vue/padding-line-between-blocks': ['error', 'always'],
-    'vue/prefer-separate-static-class': 'error',
+    'vue/prefer-separate-static-class': 'error', // @jayce: 不要在动态class 绑定中写 静态class Bad: <div :class="{'static-class': true, 'dynamic-class': foo}" />
 
     // extensions
     'vue/array-bracket-spacing': ['error', 'never'],
@@ -107,4 +115,4 @@ module.exports = {
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
     'vue/template-curly-spacing': 'error',
   },
-}
+};

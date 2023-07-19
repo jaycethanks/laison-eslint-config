@@ -1,24 +1,3 @@
-<script setup lang="ts">
-import { onMounted, ref, shallowReactive } from 'vue'
-
-const h2 = ref()
-const state = shallowReactive({ outerText: 1, outer: { innerText: 1, inner: { deep: { count: [] } } } })
-function plus() {
-  (state.outer.inner.deep.count as number[]).push(1)
-}
-function minus() {
-  (state.outer.inner.deep.count as number[]).push(-1)
-}
-function changeOuter() {
-  state.outerText++
-}
-const itemRefs = ref([])
-
-onMounted(() => {
-  console.log('[itemRefs]: ', itemRefs)
-})
-</script>
-
 <template>
   <button @click="plus">
     add
@@ -29,9 +8,16 @@ onMounted(() => {
   <button @click="changeOuter">
     changeouter
   </button>
-  <h2 ref="h2">
-    {{ state.outer.inner.deep.count }}
-  </h2>
+  <h2
+    ref="h2"
+    a="1"
+    b="2"
+    c="3"
+    d="4"
+    e="5"
+    f="6"
+    g="7"
+  />
   <h2 ref="h2">
     {{ state.outerText }}
   </h2>
@@ -41,3 +27,24 @@ onMounted(() => {
     </li>
   </ul>
 </template>
+
+<script setup lang="ts">
+import { onMounted, ref, shallowReactive } from 'vue';
+
+const h2 = ref();
+const state = shallowReactive({ outerText: 1, outer: { innerText: 1, inner: { deep: { count: [] } } } });
+function plus() {
+  (state.outer.inner.deep.count as number[]).push(1);
+}
+function minus() {
+  (state.outer.inner.deep.count as number[]).push(-1);
+}
+function changeOuter() {
+  state.outerText++;
+}
+const itemRefs = ref([]);
+
+onMounted(() => {
+  console.log('[itemRefs]: ', itemRefs);
+});
+</script>
