@@ -4,7 +4,7 @@
   "description": "this configs preset based on @antfu/eslint-config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/jaycethanks/laison-eslint-config",
   "keywords": [
     "eslint-config"
   ],

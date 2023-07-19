@@ -3,10 +3,10 @@
 </template>
 
 <script setup lang='ts'>
-defineOptions();
-defineProps();
-defineEmits();
-defineSlots();
+// defineProps();
+// defineOptions();
+// defineSlots();
+// defineEmits();
 </script>
 
 <style></style>
