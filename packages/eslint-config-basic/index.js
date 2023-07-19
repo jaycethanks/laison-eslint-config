@@ -220,7 +220,7 @@ module.exports = {
 
     // Common
     // 'semi': ['error', 'never'], // 禁用 semi
-    'semi': ['error', 'always'], // 有semi
+    'semi': ['error', 'always'], // @jayce: 有semi
     'curly': ['error', 'multi-or-nest', 'consistent'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
@@ -401,4 +401,4 @@ module.exports = {
     'antfu/top-level-function': 'error',
     // 'antfu/prefer-inline-type-import': 'error',
   },
-}
+};
