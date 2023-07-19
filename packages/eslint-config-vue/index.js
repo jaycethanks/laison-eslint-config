@@ -58,9 +58,7 @@ module.exports = {
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
     'vue/v-on-event-hyphenation': ['error', 'never'], // @jayce: Bad: <Example @cusom-event> Good: <Example @customEvent>
-    'vue/define-macros-order': ['error', {
-      order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
-    }],
+    'vue/define-macros-order': ['error', { order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'] }],
     'vue/html-comment-content-spacing': ['error', 'always', {
       exceptions: ['-'],
     }],

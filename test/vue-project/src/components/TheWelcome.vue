@@ -70,6 +70,12 @@
     <template #heading>
       Support Vue
     </template>
+    <a
+      href="https://vitejs.dev/"
+      target="_blank"
+      hello="world"
+      rel="noopener"
+    >Vite</a> +
 
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by

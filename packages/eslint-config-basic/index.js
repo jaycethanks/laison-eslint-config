@@ -51,7 +51,6 @@ module.exports = {
     'antfu',
     'no-only-tests',
     'unused-imports',
-    '@html-eslint', // @jayce
   ],
   settings: {
     'import/resolver': {
