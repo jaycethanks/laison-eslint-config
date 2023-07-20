@@ -1,6 +1,6 @@
 {
   "name": "@laison/eslint-plugin-antfu",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "license": "MIT",
   "homepage": "https://github.com/jaycethanks/laison-eslint-config",
   "main": "./dist/index.cjs",
