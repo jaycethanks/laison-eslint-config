@@ -157,11 +157,11 @@ module.exports = {
     'lines-between-class-members': 'off',
     '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
-    // antfu
-    'antfu/generic-spacing': 'error',
-    'antfu/no-cjs-exports': 'error',
-    'antfu/no-ts-export-equal': 'error',
-    'antfu/no-const-enum': 'error',
+    // antfu @jayce  禁用 antfu 的自定义rule, 因为开启后, 当项目中使用 prettier , 使用 eslint-plugin-prettier 插件去解决冲突的时候,会因为没有对应的覆盖规则而报错
+    // 'antfu/generic-spacing': 'error',
+    // 'antfu/no-cjs-exports': 'error',
+    // 'antfu/no-ts-export-equal': 'error',
+    // 'antfu/no-const-enum': 'error',
 
     // off
     '@typescript-eslint/consistent-indexed-object-style': 'off',

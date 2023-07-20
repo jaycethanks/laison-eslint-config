@@ -202,8 +202,9 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
-        'antfu/no-cjs-exports': 'off',
-        'antfu/no-ts-export-equal': 'off',
+        // antfu @jayce  禁用 antfu 的自定义rule, 因为开启后, 当项目中使用 prettier , 使用 eslint-plugin-prettier 插件去解决冲突的时候,会因为没有对应的覆盖规则而报错
+        // 'antfu/no-cjs-exports': 'off',
+        // 'antfu/no-ts-export-equal': 'off',
       },
     },
   ],
@@ -394,10 +395,10 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
 
-    // antfu
-    'antfu/if-newline': 'error',
-    'antfu/import-dedupe': 'error',
-    'antfu/top-level-function': 'error',
+    // antfu @jayce  禁用 antfu 的自定义rule, 因为开启后, 当项目中使用 prettier , 使用 eslint-plugin-prettier 插件去解决冲突的时候,会因为没有对应的覆盖规则而报错
+    // 'antfu/if-newline': 'error',
+    // 'antfu/import-dedupe': 'error',
+    // 'antfu/top-level-function': 'error',
     // 'antfu/prefer-inline-type-import': 'error',
   },
 };

@@ -2,18 +2,19 @@ function generate(color: string, obj: any) {
   return {};
 }
 export const primaryColor = '#1890FF';
-
 export const darkMode = 'light';
 
 type Fn = (...arg: any) => any;
-function foo() {
-  return true;
+
+function foo(number) {
+  return number > 10;
 }
-if (foo) { let bar; bar = 0; }
-function baz() {
-  const i = 0;
-  return i;
-}
+if (foo(4))
+  console.log('balabala');
+
+function baz() { const i = 0; return i; }
+
+baz();
 
 class C {
   static { let bar; bar = 0; }
@@ -39,6 +40,11 @@ export function getThemeColors(color?: string) {
 
   return [...lightColors, ...modeColors];
 }
+const users = [
+  { userId: 1, username: 'Alfie Carmelita' }, { userId: 2, username: 'Gina Roshan' },
+  { userId: 3, username: 'Shug Nabu' }, { userId: 4, username: 'Rahman Fraser' },
+  { userId: 5, username: 'Toshe Lyuben' }, { userId: 6, username: 'Sergio Nilofar' },
+];
 
 export function generateColors({ color = primaryColor, mixLighten, mixDarken, tinycolor }: GenerateColorsParams) {
   const arr = Array.from({ length: 19 }).fill(0);
