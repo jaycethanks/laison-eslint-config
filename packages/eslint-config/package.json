@@ -1,7 +1,7 @@
 {
   "name": "@laison/eslint-config",
-  "version": "0.0.13",
-  "description": "Anthony's ESLint config",
+  "version": "0.0.14",
+  "description": "Laison's ESLint config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
   "homepage": "https://github.com/jaycethanks/laison-eslint-config",

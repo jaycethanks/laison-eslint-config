@@ -1,6 +1,6 @@
 {
   "name": "@laison/eslint-config-ts",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "this configs preset based on @antfu/eslint-config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
