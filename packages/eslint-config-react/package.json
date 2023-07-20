@@ -1,6 +1,6 @@
 {
   "name": "@laison/eslint-config-react",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "this configs preset based on @antfu/eslint-config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
