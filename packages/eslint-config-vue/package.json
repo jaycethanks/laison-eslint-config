@@ -1,6 +1,6 @@
 {
   "name": "@laison/eslint-config-vue",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "this configs preset based on @antfu/eslint-config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
