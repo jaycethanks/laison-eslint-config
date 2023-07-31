@@ -9,12 +9,20 @@ type Fn = (...arg: any) => any;
 function foo(number) {
   return number > 10;
 }
-if (foo(4))
-  console.log('balabala');
+if (foo(4)) console.log('balabala');
 
 function baz() { const i = 0; return i; }
 
 baz();
+
+if (foo) foo++;
+const bar = true;
+while (bar) baz();
+
+if (foo)
+  baz();
+
+else qux();
 
 class C {
   static { let bar; bar = 0; }

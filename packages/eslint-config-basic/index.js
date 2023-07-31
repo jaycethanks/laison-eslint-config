@@ -48,7 +48,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'antfu',
+    // 'antfu',
     'no-only-tests',
     'unused-imports',
   ],
@@ -221,7 +221,7 @@ module.exports = {
     // Common
     // 'semi': ['error', 'never'], // 禁用 semi
     'semi': ['error', 'always'], // @jayce: 有semi
-    'curly': ['error', 'multi-or-nest', 'consistent'],
+    // 'curly': ['error', 'multi-or-nest', 'consistent'], // @jayce: if 语句必须有 {}
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
 
