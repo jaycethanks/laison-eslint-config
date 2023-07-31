@@ -1,6 +1,6 @@
 {
   "name": "@laison/eslint-config",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Laison's ESLint config",
   "author": "SunZhongyi <jaycethanks@outlook.com>",
   "license": "MIT",
